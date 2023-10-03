@@ -4,6 +4,8 @@ const close = document.querySelector(".cross")
 const view = document.querySelector(".view-button")
 const invisible = document.querySelector(".invisible")
 const addCart = document.querySelector(".buy")
+const seeMore = document.querySelector(".see-more")
+const productDetail = document.querySelector(".detail")
 const like = document.querySelectorAll(".liked")
 const drop = () => {
     menu.style.transform = "translateY(-12vh)"
@@ -19,4 +21,7 @@ view.addEventListener("click", () => {
 })
 like.addEventListener("click", () => {
     like.style.color = "red"
+})
+seeMore.addEventListener("click", () => {
+    seeMore.className = "visible"
 })
